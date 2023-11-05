@@ -1,0 +1,154 @@
+:root {
+    /* fonts */
+    --ff-Gluten: 'Gluten', cursive;
+    --ff-Tahoma: 'Thoma', sans-serif;
+
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-Tahoma);
+}
+
+.wrapper {
+    background-color: #e4e4e4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: var(--ff-Gluten);
+    font-weight: var(--fw-black);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+#paintArea {
+    width: 1400px;
+    height: 700px;
+    border: 2px solid #000;
+    border-radius: 1em;
+    background-color: #fff;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75em;
+}
+
+aside p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#colorPicker {
+    width: 75px;
+    height: 90px;
+    margin-bottom: 3em;
+}
+
+.colorBtn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#colorBlack {
+    background-color: black;
+}
+
+#colorWhite {
+    background-color: white;
+}
+
+#colorBlue {
+    background-color: blue;
+}
+
+#colorRed {
+    background-color: red;
+}
+
+#colorYellow {
+    background-color: yellow;
+}
+
+#colorPink {
+    background-color: pink;
+}
+
+#colorGreen {
+    background-color: green;
+}
+
+#colorOrange {
+    background-color: orange;
+}
+
+#counterLabel {
+    font-size: 2rem;
+}
+
+.brushBtn {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer {
+    width: 1400px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 72em;
+    margin-top: 1em;
+}
+
+.footer button {
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+}
+
+#clearBtn {
+    padding: 8px 16px;
+    background-color: #f00101;
+    color: #fff;
+}
+
+#printBtn {
+    padding: 8px 50px;
+    background-color: #afafaf;
+    color: #000;
+}

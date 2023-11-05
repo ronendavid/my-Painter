@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Painter</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+</body>
+<div class="wrapper">
+    <header class="header">
+        <h1>My Painter 2.0</h1>
+    </header>
+    <main class="main-wrapper">
+        <aside class="colors-wrapper">
+            <p>Pick a<br>Color</p>
+            <input type="color" id="colorPicker">
+            <p>Base<br>Colors</p>
+            <button id="colorBlack" class="colorBtn" title="black"></button>
+            <button id="colorWhite" class="colorBtn" title="white"></button>
+            <button id="colorBlue" class="colorBtn" title="blue"></button>
+            <button id="colorRed" class="colorBtn" title="red"></button>
+            <button id="colorYellow" class="colorBtn" title="yellow"></button>
+            <button id="colorPink" class="colorBtn" title="pink"></button>
+            <button id="colorGreen" class="colorBtn" title="green"></button>
+            <button id="colorOrange" class="colorBtn" title="orange"></button>
+        </aside>
+        <canvas id="paintArea" width="1500" height="900"></canvas>
+        <aside class="brush-Size-wrapper">
+            <p>Brush<br>Size</p>
+            <label id="counterLabel">1</label>
+            <button id="increaseBtn" class="brushBtn" title="Increase">&#43;</button>
+            <button id="decreaseBtn" class="brushBtn" title="Decrease">&#8722;</button>
+        </aside>
+    </main>
+    <footer class="footer">
+        <button id="clearBtn">Clear</button>
+        <button id="printBtn">Print</button>
+    </footer>
+</div>
+
+</html>
