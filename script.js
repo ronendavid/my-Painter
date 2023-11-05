@@ -47,7 +47,7 @@ const colorOrange = document.getElementById("colorBlack").title;
 const increaseBtn = document.getElementById("increaseBtn");
 const decreaseBtn = document.getElementById("decreaseBtn");
 const counterLabel = document.getElementById("counterLabel");
-let brushSize = 1;
+let brushSize = 5;
 
 increaseBtn.onclick = function () {
     brushSize++;
